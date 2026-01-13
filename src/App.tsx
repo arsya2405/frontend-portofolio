@@ -1,6 +1,6 @@
 import './App.css'
 
-const Header = () => {
+const HeaderComponent = () => {
   return (
     <div className="bg-sky-700 flex w-full">
       <p className="p-5">Header</p>
@@ -8,10 +8,10 @@ const Header = () => {
   );
 }
 
-const Footer = () => {
+const FooterComponent = () => {
   return (
-    <div>
-      <p>Footer</p>
+    <div className="bg-sky-700 flex w-full">
+      <p className="p-5">Footer</p>
     </div>
   );
 }
@@ -19,7 +19,19 @@ const Footer = () => {
 // Nested routing configuration
 function App() {
   return (
-    <Header />
+    <div className="flex flex-col min-h-screen">
+      <header>
+        <HeaderComponent />
+      </header>
+      <main className="flex-1">
+        <div>
+          <p>Main</p>
+        </div>
+      </main>
+      <footer>
+        <FooterComponent />
+      </footer>
+    </div>
   );
 }
 
