@@ -2,7 +2,7 @@ import './App.css'
 
 const HeaderComponent = () => {
   return (
-    <div className="bg-sky-700 flex w-full">
+    <div className="bg-sky-700 flex">
       <p className="p-5">Header</p>
     </div>
   );
@@ -10,7 +10,7 @@ const HeaderComponent = () => {
 
 const FooterComponent = () => {
   return (
-    <div className="bg-sky-700 flex w-full">
+    <div className="bg-sky-700 flex">
       <p className="p-5">Footer</p>
     </div>
   );
@@ -20,7 +20,7 @@ const FooterComponent = () => {
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sticky">
+      <header className="fixed w-full">
         <HeaderComponent />
       </header>
       <main className="flex-1">
