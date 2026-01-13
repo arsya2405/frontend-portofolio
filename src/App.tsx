@@ -20,7 +20,7 @@ const FooterComponent = () => {
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header>
+      <header className="fixed">
         <HeaderComponent />
       </header>
       <main className="flex-1">
