@@ -28,7 +28,7 @@ function App() {
       <header className="sticky">
         <HeaderComponent />
       </header>
-      <main className="flex-1">
+      <main className="flex flex-1 flex-col">
         <div>
           <p>Main</p>
         </div>
