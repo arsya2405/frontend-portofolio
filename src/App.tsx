@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css'
 
 const HeaderComponent = () => {
@@ -18,6 +19,10 @@ const FooterComponent = () => {
 
 // Nested routing configuration
 function App() {
+  useEffect(() => {
+    document.title = "Personal Portfolio"
+  }, [])
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky">
