@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import './App.css'
 import { Routes, Route, Outlet } from 'react-router-dom';
-import Home from './pages/HomePage';
-import Dashboard from './pages/DashboardPage';
+import AboutMe from './pages/AboutMePage';
+import Projects from './pages/ProjectsPage';
 
 const HeaderComponent = () => {
   return (
@@ -47,8 +47,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />}/>
-        <Route path="dashboard" element={<Dashboard />}/>
+        <Route index element={<AboutMe />}/>
+        <Route path="projects" element={<Projects />}/>
       </Route>
     </Routes>
   );
