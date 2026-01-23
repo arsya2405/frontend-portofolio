@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import './App.css'
+import { Routes, Route, Outlet } from 'react-router-dom';
 import Home from './pages/HomePage';
+import Dashboard from './pages/DashboardPage';
 
 const HeaderComponent = () => {
   return (
@@ -18,12 +20,7 @@ const FooterComponent = () => {
   );
 }
 
-// Nested routing configuration
-function App() {
-  useEffect(() => {
-    document.title = "Personal Portfolio"
-  }, [])
-
+const Layout = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky">
@@ -31,13 +28,29 @@ function App() {
       </header>
 
       <main className="flex flex-1 flex-col">
-        <Home />
+        <Outlet />
       </main>
 
       <footer>
         <FooterComponent />
       </footer>
     </div>
+  );
+}
+
+// Nested routing configuration
+function App() {
+  useEffect(() => {
+    document.title = "Personal Portfolio"
+  }, [])
+
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />}/>
+        <Route path="dashboard" element={<Dashboard />}/>
+      </Route>
+    </Routes>
   );
 }
 
