@@ -5,11 +5,29 @@ import { NavLink } from 'react-router-dom';
 import AboutMe from './pages/AboutMePage';
 import Projects from './pages/ProjectsPage';
 
+interface NavigationItem {
+  to: string;
+  label: string;
+  icon?: string;
+}
+
+const navigationItems: NavigationItem[] = [
+  { to: '/', label: 'About Me'},
+  { to: '/projects', label: 'Projects'}
+];
+
 const HeaderComponent = () => {
   return (
-    <div className="bg-sky-700 flex p-5">
-      <p>Header</p>
-      
+    <div className="bg-sky-700 p-5">
+      <nav>
+        <ul className="flex gap-5 justify-center">
+          {navigationItems.map((item) => (
+            <li>
+              <NavLink to={item.to}>{item.label}</NavLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   );
 }
