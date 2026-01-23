@@ -1,21 +1,23 @@
 import { useEffect } from 'react';
 import './App.css'
 import { Routes, Route, Outlet } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import AboutMe from './pages/AboutMePage';
 import Projects from './pages/ProjectsPage';
 
 const HeaderComponent = () => {
   return (
-    <div className="bg-sky-700 flex">
-      <p className="p-5">Header</p>
+    <div className="bg-sky-700 flex p-5">
+      <p>Header</p>
+      
     </div>
   );
 }
 
 const FooterComponent = () => {
   return (
-    <div className="bg-sky-700 flex">
-      <p className="p-5">Footer</p>
+    <div className="bg-sky-700 flex p-5">
+      <p>Footer</p>
     </div>
   );
 }
