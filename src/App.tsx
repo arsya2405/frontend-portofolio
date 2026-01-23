@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import './App.css'
+import Home from './pages/HomePage';
 
 const HeaderComponent = () => {
   return (
@@ -30,11 +31,9 @@ function App() {
       </header>
 
       <main className="flex flex-1 flex-col">
-        <div>
-          <p>Main</p>
-        </div>
+        <Home />
       </main>
-      
+
       <footer>
         <FooterComponent />
       </footer>
