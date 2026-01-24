@@ -1,6 +1,8 @@
 function Projects() {
     return (
-        <h1>Dashboard</h1>
+        <div>
+            <h1>Projects</h1>
+        </div>
     );
 }
 
