@@ -34,8 +34,8 @@ const HeaderComponent = () => {
 
 const FooterComponent = () => {
   return (
-    <div className="bg-sky-700 flex p-5">
-      <p>Footer</p>
+    <div className="bg-sky-700 flex p-5 justify-center">
+      <p>&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</p>
     </div>
   );
 }
