@@ -22,7 +22,7 @@ const HeaderComponent = () => {
       <nav>
         <ul className="flex gap-5 justify-center">
           {navigationItems.map((item) => (
-            <li>
+            <li className="text-white">
               <NavLink to={item.to}>{item.label}</NavLink>
             </li>
           ))}
@@ -35,7 +35,7 @@ const HeaderComponent = () => {
 const FooterComponent = () => {
   return (
     <div className="bg-sky-700 flex p-5 justify-center">
-      <p>&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</p>
+      <p className="text-white">&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</p>
     </div>
   );
 }
