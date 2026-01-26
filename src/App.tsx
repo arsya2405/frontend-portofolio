@@ -22,7 +22,7 @@ const HeaderComponent = () => {
       <nav>
         <ul className="flex gap-5 justify-center">
           {navigationItems.map((item) => (
-            <li className="text-white hover:bg-blue-950">
+            <li className="rounded-xl p-2 text-white font-bold hover:bg-blue-950 hover:text-shadow-lg hover:text-shadow-blue-500/50">
               <NavLink to={item.to}>{item.label}</NavLink>
             </li>
           ))}
