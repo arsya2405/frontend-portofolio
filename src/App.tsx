@@ -18,11 +18,11 @@ const navigationItems: NavigationItem[] = [
 
 const HeaderComponent = () => {
   return (
-    <div className="bg-sky-700 p-5">
+    <div className="bg-blue-800 p-5">
       <nav>
         <ul className="flex gap-5 justify-center">
           {navigationItems.map((item) => (
-            <li className="text-white">
+            <li className="text-white hover:bg-blue-950">
               <NavLink to={item.to}>{item.label}</NavLink>
             </li>
           ))}
@@ -34,7 +34,7 @@ const HeaderComponent = () => {
 
 const FooterComponent = () => {
   return (
-    <div className="bg-sky-700 flex p-5 justify-center">
+    <div className="bg-blue-800 flex p-5 justify-center">
       <p className="text-white">&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</p>
     </div>
   );
