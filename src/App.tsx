@@ -19,16 +19,12 @@ const navigationItems: NavigationItem[] = [
 const HeaderComponent = () => {
   return (
     <div className="bg-blue-800 p-5">
-      <nav>
-        <ul className="flex gap-5 justify-center">
-          {navigationItems.map((item) => (
-            <li className="rounded-xl p-2 text-white font-semibold 
-            hover:bg-blue-950 hover:text-shadow-[0_0_5px] 
-            hover:text-shadow-white">
-              <NavLink to={item.to}>{item.label}</NavLink>
-            </li>
-          ))}
-        </ul>
+      <nav className="flex gap-5 justify-center">
+        {navigationItems.map((item) => (
+          <NavLink to={item.to} className="rounded-xl p-2 text-white font-semibold 
+          hover:bg-blue-950 hover:text-shadow-[0_0_5px]
+          hover:text-shadow-white">{item.label}</NavLink>
+        ))}
       </nav>
     </div>
   );
