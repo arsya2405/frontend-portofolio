@@ -4,6 +4,7 @@ import { Routes, Route, Outlet } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import AboutMe from './pages/AboutMePage';
 import Projects from './pages/ProjectsPage';
+import NotFound from './pages/NotFoundPage';
 
 interface NavigationItem {
   to: string;
@@ -65,6 +66,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<AboutMe />}/>
         <Route path="projects" element={<Projects />}/>
+        <Route path="*" element={<NotFound />}/>
       </Route>
     </Routes>
   );
