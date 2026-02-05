@@ -44,7 +44,7 @@ const Layout = () => {
         <HeaderComponent />
       </header>
 
-      <main className="flex-1">
+      <main className="flex flex-col flex-1">
         <Outlet />
       </main>
 

@@ -1,7 +1,8 @@
 function AboutMe() {
     return (
-        <div className="flex">
-            <h1>About Me</h1>
+        <div className="flex flex-1 justify-center items-center">
+            <div>picture</div>
+            <div>text</div>
         </div>
     );
 }
