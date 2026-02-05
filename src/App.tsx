@@ -21,9 +21,7 @@ const HeaderComponent = () => {
     <div className="bg-blue-800 p-5">
       <nav className="flex gap-5 justify-center rounded-xl p-2 text-white font-semibold">
         {navigationItems.map((item) => (
-          <NavLink to={item.to} className={({ isActive }) => (
-            isActive ? "focus:no-underline focus:text-shadow-[0_0_5px] focus:text-shadow-white" : "hover:underline"
-          )}>{item.label}</NavLink>
+          <NavLink to={item.to} className="nav-link hover:underline">{item.label}</NavLink>
         ))}
       </nav>
     </div>
