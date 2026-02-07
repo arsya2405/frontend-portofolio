@@ -16,7 +16,7 @@ interface NavigationItem {
 const navigationItems: NavigationItem[] = [
   { to: '/', label: 'About Me' },
   { to: '/projects', label: 'Projects' },
-  { to: '/certificates', label: 'Certificates' }
+  { to: '/certifications', label: 'Certifications' }
 ];
 
 const HeaderComponent = () => {
@@ -68,7 +68,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<AboutMe />}/>
         <Route path="projects" element={<Projects />}/>
-        <Route path="certificates" element={<Certificates />}/>
+        <Route path="certifications" element={<Certificates />}/>
         <Route path="*" element={<NotFound />}/>
       </Route>
     </Routes>
