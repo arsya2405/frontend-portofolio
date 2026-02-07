@@ -1,8 +1,13 @@
 function AboutMe() {
     return (
-        <div className="flex flex-1 justify-center items-center p-5 gap-5">
-            <div>picture</div>
-            <div>text</div>
+        <div className="flex flex-col p-5">
+            <div>
+                Hello There!
+            </div>
+            <div className="flex flex-1 justify-center items-center gap-5">
+                <div>picture</div>
+                <div>text</div>
+            </div>
         </div>
     );
 }
