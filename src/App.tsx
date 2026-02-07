@@ -4,6 +4,7 @@ import { Routes, Route, Outlet } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import AboutMe from './pages/AboutMePage';
 import Projects from './pages/ProjectsPage';
+import Certificates from './pages/CertificatesPage';
 import NotFound from './pages/NotFoundPage';
 
 interface NavigationItem {
@@ -13,8 +14,9 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  { to: '/', label: 'About Me'},
-  { to: '/projects', label: 'Projects'}
+  { to: '/', label: 'About Me' },
+  { to: '/projects', label: 'Projects' },
+  { to: '/certificates', label: 'Certificates' }
 ];
 
 const HeaderComponent = () => {
@@ -66,6 +68,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<AboutMe />}/>
         <Route path="projects" element={<Projects />}/>
+        <Route path="certificates" element={<Certificates />}/>
         <Route path="*" element={<NotFound />}/>
       </Route>
     </Routes>
