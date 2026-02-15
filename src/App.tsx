@@ -31,9 +31,7 @@ const HeaderComponent = () => {
 
 const FooterComponent = () => {
   return (
-    <div className="bg-blue-800 flex p-5 justify-center">
-      <p className="text-white">&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</p>
-    </div>
+    <p className="text-white">&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</p>
   );
 }
 
@@ -48,7 +46,7 @@ const Layout = () => {
         <Outlet />
       </main>
 
-      <footer>
+      <footer className="bg-blue-800 flex p-5 justify-center">
         <FooterComponent />
       </footer>
     </div>
