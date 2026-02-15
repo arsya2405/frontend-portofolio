@@ -21,13 +21,11 @@ const navigationItems: NavigationItem[] = [
 
 const HeaderComponent = () => {
   return (
-    <div className="bg-blue-800 p-5">
-      <nav className="flex gap-5 justify-center rounded-xl p-2 text-white font-semibold">
-        {navigationItems.map((item) => (
-          <NavLink to={item.to} className="nav-link hover:underline">{item.label}</NavLink>
-        ))}
-      </nav>
-    </div>
+    <nav className="bg-blue-800 p-5 flex gap-5 justify-center p-2 text-white font-semibold">
+      {navigationItems.map((item) => (
+        <NavLink to={item.to} className="nav-link hover:underline">{item.label}</NavLink>
+      ))}
+    </nav>
   );
 }
 
