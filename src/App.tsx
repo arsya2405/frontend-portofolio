@@ -31,7 +31,7 @@ const HeaderComponent = () => {
 
 const FooterComponent = () => {
   return (
-    <p className="text-white">&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</p>
+    <span className="text-white">&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</span>
   );
 }
 
