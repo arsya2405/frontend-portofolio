@@ -1,6 +1,6 @@
 function AboutMe() {
     return (
-        <div className="flex flex-col p-5">
+        <article className="flex flex-col p-5">
             <div>
                 <h1 className="text-[2rem]">Hello There!</h1>
             </div>
@@ -8,7 +8,7 @@ function AboutMe() {
                 <div>picture</div>
                 <div>text</div>
             </div>
-        </div>
+        </article>
     );
 }
 
