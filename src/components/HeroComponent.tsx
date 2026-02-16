@@ -1,9 +1,9 @@
 function Hero() {
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-[1rem]">
             <h1 className="text-[2rem]">Hello There!</h1>
             <p>I'm <span className="font-bold">Muhammad Arsya Nurafi</span>, a Computer Science Student & Front-End Developer.</p>
-            <div className=""> {/* size increases 1/4 */}
+            <div className="grid place-items-center w-[10rem] h-[3rem]"> {/* size increases 1/4 */}
                 <div className="primary-button w-[10rem] h-[3rem] flex items-center justify-center">
                     <a href="mailto:arsyanurafi2405@gmail.com" target="_blank" rel="noopener noreferrer"> {/* originally 8 and 2*/}
                         <strong>Contact Me</strong>
