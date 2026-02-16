@@ -7,3 +7,9 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8fafc;
 }
+
+.primary-button {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 2rem;
+}
