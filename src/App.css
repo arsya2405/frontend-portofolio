@@ -16,7 +16,7 @@ body {
 
 .primary-button:hover {
     background-color: #75aaff;
-    height: 125%;
-    width: 125%;
-    font-size: 125%;
+    height: 110%;
+    width: 110%;
+    font-size: 110%;
 }
