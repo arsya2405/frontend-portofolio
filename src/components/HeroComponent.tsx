@@ -14,7 +14,7 @@ function Hero() {
                 <div className="secondary-button">
                     <img src="/images/linkedin-logo.avif" alt="LinkedIn Icon" className="h-[1rem]"/>
                     <a href="https://www.linkedin.com/in/muhammad-arsya-nurafi" target="_blank" rel="noopener noreferrer">
-                        LinkedIn
+                        My LinkedIn
                     </a>
                 </div>
             </div>
