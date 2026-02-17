@@ -12,7 +12,10 @@ function Hero() {
             </div>
             <div className="button-parent w-[10rem] h-[2rem]">
                 <div className="secondary-button">
-                    <a href="https://www.linkedin.com/in/muhammad-arsya-nurafi" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin-logo.avif" alt="LinkedIn Icon" />LinkedIn</a>
+                    <img src="/images/linkedin-logo.avif" alt="LinkedIn Icon" className="h-[1rem]"/>
+                    <a href="https://www.linkedin.com/in/muhammad-arsya-nurafi" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
                 </div>
             </div>
         </div>
