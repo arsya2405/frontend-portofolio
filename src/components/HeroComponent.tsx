@@ -1,3 +1,5 @@
+import linkedinIcon from '../assets/images/linkedin-logo.avif'
+
 function Hero() {
     return (
         <div className="flex flex-col items-center gap-[0.5rem]">
@@ -12,7 +14,7 @@ function Hero() {
             </div>
             <div className="button-parent w-[10rem] h-[2rem]">
                 <div className="secondary-button">
-                    <img src="/images/linkedin-logo.avif" alt="LinkedIn Icon" className="button-icon"/>
+                    <img src={linkedinIcon} alt="LinkedIn Icon" className="button-icon"/>
                     <a href="https://www.linkedin.com/in/muhammad-arsya-nurafi" target="_blank" rel="noopener noreferrer">
                         My LinkedIn
                     </a>
