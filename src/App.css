@@ -43,6 +43,15 @@ body {
     transition: transform 0.3s ease;
 }
 
+.primary-button:active, .secondary-button:active {
+    transform: scale(1);
+    transition: transform 0s ease;
+}
+
+.primary-button:active {
+    background-color: #1e3a8a;
+}
+
 .button-icon {
     height: 75%;
 }
