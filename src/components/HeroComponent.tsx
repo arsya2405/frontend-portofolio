@@ -11,6 +11,7 @@ function Hero() {
                         <strong>Contact Me</strong>
                     </a>
                 </div>
+            <p>I'm <strong>Muhammad Arsya Nurafi</strong>, a Computer Science Student & Front-End Developer.</p>
             </div>
             <div className="button-parent w-[10rem] h-[2rem]">
                 <div className="secondary-button">
