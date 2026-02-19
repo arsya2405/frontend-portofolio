@@ -23,7 +23,7 @@ const HeaderComponent = () => {
   return (
     <nav className="bg-blue-800 p-5 flex gap-5 justify-center p-2 text-white font-semibold">
       {navigationItems.map((item) => (
-        <NavLink to={item.to} className="nav-link hover:underline">{item.label}</NavLink>
+        <NavLink to={item.to} className="nav-link">{item.label}</NavLink>
       ))}
     </nav>
   );

@@ -21,12 +21,15 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.25rem;
-    transition: transform 0.3s ease;
 }
 
 .primary-button:hover {
-    background-color: #75aaff;
+    background-color: #3b82f6;
+}
+
+.primary-button:hover, .secondary-button:hover, .nav-link:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .secondary-button {
@@ -38,13 +41,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.25rem;
-    transition: transform 0.3s ease;
-}
-
-.secondary-button:hover {
-    transform: scale(1.1);
 }
 
 .button-icon {
     height: 75%;
 }
+
