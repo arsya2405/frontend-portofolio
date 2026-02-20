@@ -22,7 +22,7 @@ const navigationItems: NavigationItem[] = [
 const HeaderComponent = () => {
   return (
     <header className="sticky top-[0]">
-      <nav className="primary-color p-5 flex gap-5 justify-center p-2 text-white font-semibold">
+      <nav className="primary-color p-5 flex gap-5 justify-center text-white font-semibold">
         {navigationItems.map((item) => (
           <NavLink to={item.to} className="nav-link">{item.label}</NavLink>
         ))}
