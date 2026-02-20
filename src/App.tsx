@@ -21,7 +21,7 @@ const navigationItems: NavigationItem[] = [
 
 const HeaderComponent = () => {
   return (
-    <nav className="bg-[#1e3a8a] p-5 flex gap-5 justify-center p-2 text-white font-semibold">
+    <nav className="primary-color p-5 flex gap-5 justify-center p-2 text-white font-semibold">
       {navigationItems.map((item) => (
         <NavLink to={item.to} className="nav-link">{item.label}</NavLink>
       ))}
@@ -46,7 +46,7 @@ const Layout = () => {
         <Outlet />
       </main>
 
-      <footer className="bg-[#1e3a8a] flex p-5 justify-center">
+      <footer className="primary-color flex p-5 justify-center">
         <FooterComponent />
       </footer>
     </div>
