@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import './App.css'
 import { Routes, Route, Outlet } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import AboutMe from './pages/AboutMePage';
+import Home from './pages/HomePage';
 import Projects from './pages/ProjectsPage';
 import Certificates from './pages/CertificatesPage';
 import NotFound from './pages/NotFoundPage';
@@ -14,7 +14,7 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  { to: '/', label: 'About Me' },
+  { to: '/', label: 'Home' },
   { to: '/projects', label: 'Projects' },
   { to: '/certifications', label: 'Certifications' }
 ];
@@ -62,7 +62,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<AboutMe />}/>
+        <Route index element={<Home />}/>
         <Route path="projects" element={<Projects />}/>
         <Route path="certifications" element={<Certificates />}/>
         <Route path="*" element={<NotFound />}/>
