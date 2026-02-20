@@ -21,34 +21,34 @@ const navigationItems: NavigationItem[] = [
 
 const HeaderComponent = () => {
   return (
-    <nav className="primary-color p-5 flex gap-5 justify-center p-2 text-white font-semibold">
-      {navigationItems.map((item) => (
-        <NavLink to={item.to} className="nav-link">{item.label}</NavLink>
-      ))}
-    </nav>
+    <header className="sticky top-[0] z-[1000]">
+      <nav className="primary-color p-5 flex gap-5 justify-center p-2 text-white font-semibold">
+        {navigationItems.map((item) => (
+          <NavLink to={item.to} className="nav-link">{item.label}</NavLink>
+        ))}
+      </nav>
+    </header>
   );
 }
 
 const FooterComponent = () => {
   return (
-    <span className="text-white">&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</span>
+    <footer className="primary-color flex p-5 justify-center">
+      <span className="text-white">&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</span>
+    </footer>
   );
 }
 
 const Layout = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sticky">
-        <HeaderComponent />
-      </header>
+      <HeaderComponent />
 
       <main className="flex flex-col flex-1">
         <Outlet />
       </main>
 
-      <footer className="primary-color flex p-5 justify-center">
-        <FooterComponent />
-      </footer>
+      <FooterComponent />
     </div>
   );
 }
