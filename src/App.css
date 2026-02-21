@@ -13,10 +13,6 @@ body {
     place-items: center;
 }
 
-.primary-button, .secondary-button, .pill-element {
-    border-radius: 2rem;
-}
-
 .primary-button {
     background-color: #3b82f6;
     color: white;
@@ -38,6 +34,10 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.25rem;
+}
+
+.primary-button, .secondary-button, .pill-element {
+    border-radius: 2rem;
 }
 
 .primary-button:hover, .secondary-button:hover, .nav-link:hover, .nav-link.active {
