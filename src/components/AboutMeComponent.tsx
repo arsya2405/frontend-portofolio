@@ -8,8 +8,13 @@ function AboutMe () {
                     <li>Keen to pursue a career in Information Technology (IT) with a focus on front-end web developer roles.</li>
                 </ul>
             </div>
-            <div className="flex-1">
-
+            <div className="flex-1 flex flex-col">
+                <div>
+                    <h1 className="underline">Hard Skills</h1>
+                </div>
+                <div>
+                    <h1 className="underline">Soft Skills</h1>
+                </div>
             </div>
         </article>
     )
