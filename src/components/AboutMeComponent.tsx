@@ -2,6 +2,7 @@ function AboutMe () {
     const programmingLanguages = [ "TypeScript", "HTML/CSS", "C#", "SQL" ];
     const frameworks = [ "React", "Tailwind CSS" ];
     const tools = [ "GitHub", "Visual Studio Code", "Unity 3D Editor", "PostgreSQL" ];
+    const softSkills = [ "Being Detail-Oriented", "Problem-Solving", "Collaboration", "Time Management" ];
     
     return (
         <article className="flex gap-[0.5rem]">
@@ -45,7 +46,9 @@ function AboutMe () {
                 <div id="soft-skills" className="flex flex-col gap-[1rem]">
                     <h1 className="underline">Soft Skills</h1>
                     <div className="flex gap-[0.5rem]">
-                        <div className="pill-element bg-amber-100 text-amber-800">insert skill</div>
+                        {softSkills.map((softSkill) => (
+                            <div className="pill-element bg-amber-100 text-amber-800">{softSkill}</div>
+                        ))}
                     </div>
                 </div>
             </div>
