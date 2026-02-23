@@ -3,7 +3,7 @@ import AboutMe from "../components/AboutMeComponent";
 
 function Home() {
     return (
-        <section className="flex flex-col gap-[20px] flex-1">
+        <section className="flex flex-col flex-1 justify-between">
             <Hero />
             <AboutMe />
         </section>
