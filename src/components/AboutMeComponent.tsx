@@ -5,7 +5,7 @@ function AboutMe () {
     const softSkills = [ "Being Detail-Oriented", "Problem-Solving", "Collaboration", "Time Management" ];
     
     return (
-        <article id="about-and-skills" className="flex gap-[0.5rem]">
+        <article id="about-and-skills" className="flex flex-col gap-[0.5rem] md:flex-row">
             <div id="about-me" className="flex-1 flex flex-col gap-[1rem]">
                 <h1 className="underline">About Me</h1>
                 <ul className="list-disc list-inside">
@@ -19,7 +19,7 @@ function AboutMe () {
                     <div id="hard-skill-groups" className="flex flex-col gap-[0.5rem]">
                         <div id="programming-languages" className="flex flex-col">
                             <h2>Programming Languages:</h2>
-                            <div className="flex gap-[0.5rem]">
+                            <div className="flex gap-[0.5rem] flex-wrap">
                                 {programmingLanguages.map((lang) => (
                                     <div className="pill-element bg-blue-100 text-blue-800">{lang}</div>
                                 ))}
@@ -27,7 +27,7 @@ function AboutMe () {
                         </div>
                         <div id="frameworks-or-libraries" className="flex flex-col">
                             <h2>Frameworks / Libraries:</h2>
-                            <div className="flex gap-[0.5rem]">
+                            <div className="flex gap-[0.5rem] flex-wrap">
                                 {frameworks.map((framework) => (
                                     <div className="pill-element bg-teal-100 text-teal-800">{framework}</div>
                                 ))}
@@ -35,7 +35,7 @@ function AboutMe () {
                         </div>
                         <div id="tools" className="flex flex-col">
                             <h2>Tools:</h2>
-                            <div className="flex gap-[0.5rem]">
+                            <div className="flex gap-[0.5rem] flex-wrap">
                                 {tools.map((tool) => (
                                     <div className="pill-element bg-indigo-100 text-indigo-800">{tool}</div>
                                 ))}
@@ -45,7 +45,7 @@ function AboutMe () {
                 </div>
                 <div id="soft-skills" className="flex flex-col gap-[1rem]">
                     <h1 className="underline">Soft Skills</h1>
-                    <div className="flex gap-[0.5rem]">
+                    <div className="flex gap-[0.5rem] flex-wrap">
                         {softSkills.map((softSkill) => (
                             <div className="pill-element bg-amber-100 text-amber-800">{softSkill}</div>
                         ))}
