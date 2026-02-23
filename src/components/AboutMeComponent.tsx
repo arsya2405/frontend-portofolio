@@ -5,7 +5,7 @@ function AboutMe () {
     const softSkills = [ "Being Detail-Oriented", "Problem-Solving", "Collaboration", "Time Management" ];
     
     return (
-        <article className="flex gap-[0.5rem]">
+        <article id="about-and-skills" className="flex gap-[0.5rem]">
             <div id="about-me" className="flex-1 flex flex-col gap-[1rem]">
                 <h1 className="underline">About Me</h1>
                 <ul className="list-disc list-inside">
