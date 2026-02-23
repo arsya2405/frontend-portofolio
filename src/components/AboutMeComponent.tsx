@@ -1,4 +1,8 @@
 function AboutMe () {
+    const programmingLanguages = [ "TypeScript", "HTML/CSS", "C#", "SQL" ];
+    const frameworks = [ "React", "Tailwind CSS" ];
+    const tools = [ "GitHub", "Visual Studio Code", "Unity 3D Editor", "PostgreSQL" ];
+    
     return (
         <article className="flex gap-[0.5rem]">
             <div id="about-me" className="flex-1 flex flex-col gap-[1rem]">
@@ -15,19 +19,25 @@ function AboutMe () {
                         <div id="programming-languages" className="flex flex-col">
                             <h2>Programming Languages:</h2>
                             <div className="flex gap-[0.5rem]">
-                                <div className="pill-element bg-blue-100 text-blue-800">insert skill</div>
+                                {programmingLanguages.map((lang) => (
+                                    <div className="pill-element bg-blue-100 text-blue-800">{lang}</div>
+                                ))}
                             </div>
                         </div>
                         <div id="frameworks-or-libraries" className="flex flex-col">
                             <h2>Frameworks / Libraries:</h2>
                             <div className="flex gap-[0.5rem]">
-                                <div className="pill-element bg-teal-100 text-teal-800">insert skill</div>
+                                {frameworks.map((framework) => (
+                                    <div className="pill-element bg-teal-100 text-teal-800">{framework}</div>
+                                ))}
                             </div>
                         </div>
                         <div id="tools" className="flex flex-col">
                             <h2>Tools:</h2>
                             <div className="flex gap-[0.5rem]">
-                                <div className="pill-element bg-indigo-100 text-indigo-800">insert skill</div>
+                                {tools.map((tool) => (
+                                    <div className="pill-element bg-indigo-100 text-indigo-800">{tool}</div>
+                                ))}
                             </div>
                         </div>
                     </div>
