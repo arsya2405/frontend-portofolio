@@ -56,7 +56,7 @@ const Layout = () => {
 // Nested routing configuration
 function App() {
   useEffect(() => {
-    document.title = "Personal Portfolio"
+    document.title = "Arsya's Portfolio"
   }, [])
 
   return (
