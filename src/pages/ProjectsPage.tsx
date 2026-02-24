@@ -3,9 +3,10 @@ function Projects() {
         img: string;
         title: string;
         creator: string;
-        description: string;
+        description: string[];
         techStack: string[];
         score?: string;
+        projectURL: string;
     }
 
     return (
