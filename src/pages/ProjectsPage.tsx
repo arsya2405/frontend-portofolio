@@ -10,7 +10,12 @@ function Projects() {
 
     return (
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <h1>Projects</h1>
+            <div className="flex flex-col">
+                <img src="" alt="" id="project-image" className=""/>
+                <div id="project-details" className="flex flex-col">
+
+                </div>
+            </div>
         </section>
     );
 }
