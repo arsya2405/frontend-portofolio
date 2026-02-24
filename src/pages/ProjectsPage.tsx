@@ -46,7 +46,7 @@ function Projects() {
                 <div id={project.id} className="flex flex-col">
                     <img src={project.img} alt={project.title} className=""/>
                     <div id="project-details" className="flex flex-col">
-
+                        <h1>{project.title}</h1>
                     </div>
                 </div>
             ))}
