@@ -4,7 +4,7 @@ function Hero() {
     return (
         <article id="hero" className="flex flex-col items-center gap-[0.5rem]">
             <p className='text-[3rem]'>Hello There!</p>
-            <p>I'm <strong>Muhammad Arsya Nurafi</strong>, a Computer Science Student & Aspiring Front-End Developer based in South Jakarta, Indonesia.</p>
+            <p className="text-center">I'm <strong>Muhammad Arsya Nurafi</strong>, a Computer Science Student & Aspiring Front-End Developer based in South Jakarta, Indonesia.</p>
             <div className="primary-button w-[10rem] h-[2rem]">
                 <a href="mailto:arsyanurafi2405@gmail.com" target="_blank" rel="noopener noreferrer"><strong>Contact Me</strong></a>
             </div>
