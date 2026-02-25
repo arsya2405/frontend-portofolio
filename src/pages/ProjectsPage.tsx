@@ -7,7 +7,7 @@ function Projects() {
         title: string;
         creator: string;
         descriptions: string[];
-        techStacks: string[];
+        techStack: string[];
         score?: string;
         projectURL: string;
     }
@@ -22,7 +22,7 @@ function Projects() {
                 "Designed and built a website containing information regarding the Nintendo Switch 2 console.",
                 "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it."
             ], 
-            techStacks: ["HTML", "CSS"], 
+            techStack: ["HTML", "CSS"], 
             score: "4 / 5 Stars",
             projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
         },
@@ -33,7 +33,7 @@ function Projects() {
             title: "", 
             creator: "", 
             descriptions: ["",], 
-            techStacks: ["",], 
+            techStack: ["",], 
             score: "97/100", 
             projectURL: ""
         },
@@ -50,7 +50,10 @@ function Projects() {
                         <div id="project-details" className="flex flex-col">
                             <h1>{project.title}</h1>
                             <p>Created by {project.creator}</p>
-                            <ul className="list-disc list-inside">
+                            <div id="tech-stack" className="">
+
+                            </div>
+                            <ul id="description" className="list-disc list-inside">
                                 {project.descriptions.map((desc) => (
                                     <li>{desc}</li>
                                 ))}
