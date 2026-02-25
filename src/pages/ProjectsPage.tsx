@@ -41,21 +41,24 @@ function Projects() {
     ]
     
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projects.map((project) => (
-                <div id={project.id} className="flex flex-col">
-                    <img src={project.img} alt={project.title} className=""/>
-                    <div id="project-details" className="flex flex-col">
-                        <h1>{project.title}</h1>
-                        <p>Created by {project.creator}</p>
-                        <ul className="list-disc list-inside">
-                            {project.descriptions.map((desc) => (
-                                <li>{desc}</li>
-                            ))}
-                        </ul>
+        <section className="flex flex-col">
+            <h1>My Projects</h1>
+            <article className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {projects.map((project) => (
+                    <div id={project.id} className="flex flex-col">
+                        <img src={project.img} alt={project.title} className=""/>
+                        <div id="project-details" className="flex flex-col">
+                            <h1>{project.title}</h1>
+                            <p>Created by {project.creator}</p>
+                            <ul className="list-disc list-inside">
+                                {project.descriptions.map((desc) => (
+                                    <li>{desc}</li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </article>
         </section>
     );
 }
