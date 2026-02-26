@@ -45,7 +45,7 @@ function Projects() {
             <h1>My Projects</h1>
             <article className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projects.map((project) => (
-                    <div id={project.id} className="flex flex-col">
+                    <div id={project.id} className="card-element flex flex-col">
                         <img src={project.img} alt={project.title} className=""/>
                         <div id="project-details" className="flex flex-col">
                             <h1>{project.title}</h1>

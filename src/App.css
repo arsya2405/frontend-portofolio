@@ -74,3 +74,10 @@ h1 {
 h2 {
     font-size: 1.5rem;
 }
+
+.card-element {
+    box-shadow: 0 5px 5px #808080;
+    padding: 20px;
+    border-radius: 2rem;
+    border-width: 1px;
+}
