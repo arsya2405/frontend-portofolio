@@ -1,9 +1,9 @@
+import { programmingLanguages } from "../App"
+import { frameworks } from "../App";
+import { tools } from "../App";
+import { softSkills } from "../App";
+
 function AboutMe () {
-    const programmingLanguages = [ "TypeScript", "HTML/CSS", "C#", "SQL" ];
-    const frameworks = [ "React", "Tailwind CSS" ];
-    const tools = [ "GitHub", "Visual Studio Code", "Unity 3D Editor", "PostgreSQL" ];
-    const softSkills = [ "Being Detail-Oriented", "Problem-Solving", "Collaboration", "Time Management" ];
-    
     return (
         <article id="about-and-skills" className="flex flex-col gap-[0.5rem] md:flex-row">
             <div id="about-me" className="flex-1 flex flex-col gap-[1rem]">

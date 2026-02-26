@@ -1,4 +1,7 @@
 import project1 from "../assets/images/switch-project.avif"
+import { programmingLanguages } from "../App"
+import { frameworks } from "../App";
+import { tools } from "../App";
 
 function Projects() {
     interface ProjectItem {

@@ -7,6 +7,11 @@ import Projects from './pages/ProjectsPage';
 import Certificates from './pages/CertificatesPage';
 import NotFound from './pages/NotFoundPage';
 
+export const programmingLanguages: string[] = [ "TypeScript", "HTML/CSS", "C#", "SQL" ];
+export const frameworks: string[] = [ "React", "Tailwind CSS" ];
+export const tools: string[] = [ "GitHub", "Visual Studio Code", "Unity 3D Editor", "PostgreSQL" ];
+export const softSkills: string[] = [ "Being Detail-Oriented", "Problem-Solving", "Collaboration", "Time Management" ];
+
 interface NavigationItem {
   to: string;
   label: string;
