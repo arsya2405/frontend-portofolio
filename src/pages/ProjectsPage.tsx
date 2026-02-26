@@ -25,7 +25,7 @@ function Projects() {
                 "Designed and built a website containing information regarding the Nintendo Switch 2 console.",
                 "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it."
             ], 
-            techStack: ["HTML", "CSS"], 
+            techStack: [programmingLanguages[1]], 
             score: "4 / 5 Stars",
             projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
         },
@@ -68,8 +68,10 @@ function Projects() {
                         <div id="project-details" className="flex flex-col">
                             <h2>{project.title}</h2>
                             <p>Created by {project.creator}</p>
-                            <div id="tech-stack" className="">
-
+                            <div id="tech-stack" className="flex flex-wrap">
+                                {project.techStack.map((tech) => (
+                                    <div className="pill-element">{tech}</div>
+                                ))}
                             </div>
                             <ul id="description" className="list-disc list-inside">
                                 {project.descriptions.map((desc) => (
