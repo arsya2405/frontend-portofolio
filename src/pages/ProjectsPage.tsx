@@ -20,12 +20,55 @@ function Projects() {
             creator: "Myself",
             descriptions: [
                 "Designed and built a website containing information regarding the Nintendo Switch 2 console.",
+                "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it.",
+                "Designed and built a website containing information regarding the Nintendo Switch 2 console.",
+                "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it.",
+                "Designed and built a website containing information regarding the Nintendo Switch 2 console.",
+                "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it.",
+            ], 
+            techStack: ["HTML", "CSS"], 
+            score: "4 / 5 Stars",
+            projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
+        },
+        {
+            id: "switch2",
+            img: project1, 
+            title: "Nintendo Switch 2 Information Website", 
+            creator: "Myself",
+            descriptions: [
+                "Designed and built a website containing information regarding the Nintendo Switch 2 console.",
                 "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it."
             ], 
             techStack: ["HTML", "CSS"], 
             score: "4 / 5 Stars",
             projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
         },
+        {
+            id: "switch2",
+            img: project1, 
+            title: "Nintendo Switch 2 Information Website", 
+            creator: "Myself",
+            descriptions: [
+                "Designed and built a website containing information regarding the Nintendo Switch 2 console.",
+                "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it."
+            ], 
+            techStack: ["HTML", "CSS"], 
+            score: "4 / 5 Stars",
+            projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
+        },
+        {
+            id: "switch2",
+            img: project1, 
+            title: "Nintendo Switch 2 Information Website", 
+            creator: "Myself",
+            descriptions: [
+                "Designed and built a website containing information regarding the Nintendo Switch 2 console.",
+                "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it."
+            ], 
+            techStack: ["HTML", "CSS"], 
+            score: "4 / 5 Stars",
+            projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
+        }
         /*
         {
             id: "",    
@@ -41,14 +84,16 @@ function Projects() {
     ]
     
     return (
-        <section className="flex flex-col">
+        <section className="flex flex-col gap-[1rem] w-[100%]">
             <h1>My Projects</h1>
-            <article className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <article className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                 {projects.map((project) => (
                     <div id={project.id} className="card-element flex flex-col">
-                        <img src={project.img} alt={project.title} className=""/>
+                        <div className="w-[100%]">
+                            <img src={project.img} alt={project.title} className="w-[100%]"/>
+                        </div>
                         <div id="project-details" className="flex flex-col">
-                            <h1>{project.title}</h1>
+                            <h2>{project.title}</h2>
                             <p>Created by {project.creator}</p>
                             <div id="tech-stack" className="">
 
