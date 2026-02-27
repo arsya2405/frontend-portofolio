@@ -65,8 +65,10 @@ function Projects() {
                             <img src={project.img} alt={project.title} className="w-[100%]"/>
                         </div>
                         <div id="project-details" className="flex flex-col">
-                            <h2>{project.title}</h2>
-                            <p>Created by {project.creator}</p>
+                            <div id="title-and-creator" className="flex flex-col">
+                                <h2>{project.title}</h2>
+                                <p>Created by {project.creator}</p>
+                            </div> 
                             <div id="tech-stack" className="flex flex-wrap gap-[0.5rem]">
                                 {project.techStack.map((tech) => (
                                     <div className=
