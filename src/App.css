@@ -46,7 +46,7 @@ body {
 }
 
 .primary-button:active, .secondary-button:active {
-    transform: scale(1);
+    transform: scale(0.95);
     transition: transform 0s ease;
 }
 
