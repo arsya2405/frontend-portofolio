@@ -30,16 +30,15 @@ function Projects() {
             projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
         },
         {
-            id: "switch2",
+            id: "dummy",
             img: project1, 
-            title: "Nintendo Switch 2 Information Website", 
+            title: "dummy card", 
             creator: "Myself",
             descriptions: [
-                "Designed and built a website containing information regarding the Nintendo Switch 2 console.",
-                "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it."
+                "lorem ipsum",
             ], 
-            techStack: ["HTML", "CSS"], 
-            score: "4 / 5 Stars",
+            techStack: [programmingLanguages[1], frameworks[1], "sakanigadik"], 
+            score: "69",
             projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
         },
         /*
@@ -68,9 +67,14 @@ function Projects() {
                         <div id="project-details" className="flex flex-col">
                             <h2>{project.title}</h2>
                             <p>Created by {project.creator}</p>
-                            <div id="tech-stack" className="flex flex-wrap">
+                            <div id="tech-stack" className="flex flex-wrap gap-[0.5rem]">
                                 {project.techStack.map((tech) => (
-                                    <div className="pill-element">{tech}</div>
+                                    <div className=
+                                    {programmingLanguages.includes(tech) ? "programming-language-pill" : 
+                                    frameworks.includes(tech) ? "framework-pill" :
+                                    tools.includes(tech) ? "tool-pill" : "generic-pill"}>
+                                        {tech}
+                                    </div>
                                 ))}
                             </div>
                             <ul id="description" className="list-disc list-inside">
