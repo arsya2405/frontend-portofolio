@@ -21,7 +21,7 @@ function AboutMe () {
                             <h2>Programming Languages:</h2>
                             <div className="flex gap-[0.5rem] flex-wrap">
                                 {programmingLanguages.map((lang) => (
-                                    <div className="pill-element programming-language-pill">{lang}</div>
+                                    <div className=" programming-language-pill">{lang}</div>
                                 ))}
                             </div>
                         </div>
@@ -29,7 +29,7 @@ function AboutMe () {
                             <h2>Frameworks / Libraries:</h2>
                             <div className="flex gap-[0.5rem] flex-wrap">
                                 {frameworks.map((framework) => (
-                                    <div className="pill-element framework-pill">{framework}</div>
+                                    <div className="framework-pill">{framework}</div>
                                 ))}
                             </div>
                         </div>
@@ -37,7 +37,7 @@ function AboutMe () {
                             <h2>Tools:</h2>
                             <div className="flex gap-[0.5rem] flex-wrap">
                                 {tools.map((tool) => (
-                                    <div className="pill-element tool-pill">{tool}</div>
+                                    <div className="tool-pill">{tool}</div>
                                 ))}
                             </div>
                         </div>
@@ -47,7 +47,7 @@ function AboutMe () {
                     <h1 className="underline">Soft Skills</h1>
                     <div className="flex gap-[0.5rem] flex-wrap">
                         {softSkills.map((softSkill) => (
-                            <div className="pill-element soft-skill-pill">{softSkill}</div>
+                            <div className="soft-skill-pill">{softSkill}</div>
                         ))}
                     </div>
                 </div>
