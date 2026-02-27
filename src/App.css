@@ -82,3 +82,22 @@ h2 {
     border-radius: 2rem;
     border-width: 1px;
 }
+
+.programming-language-pill {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+.framework-pill {
+    background-color: #ccfbf1;
+    color: #115e59;
+}
+
+.tool-pill {
+    background-color: #e0e7ff;
+    color: #3730a3;
+}
+
+.soft-skill-pill {
+    background-color: #fef3c7;
+    color: #92400e;
+}
