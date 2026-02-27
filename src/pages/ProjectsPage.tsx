@@ -37,7 +37,7 @@ function Projects() {
             descriptions: [
                 "lorem ipsum",
             ], 
-            techStack: [programmingLanguages[1], frameworks[1], "sakanigadik"], 
+            techStack: [programmingLanguages[1], frameworks[1],], 
             score: "69",
             projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
         },
