@@ -36,7 +36,7 @@ body {
     gap: 0.25rem;
 }
 
-.primary-button, .secondary-button, .programming-language-pill, .framework-pill, .tool-pill, .soft-skill-pill, .generic-pill {
+.primary-button, .secondary-button, .programming-language-pill, .framework-pill, .tool-pill, .soft-skill-pill {
     border-radius: 2rem;
 }
 
@@ -97,10 +97,6 @@ h2 {
     background-color: #fef3c7;
     color: #92400e;
 }
-.programming-language-pill, .framework-pill, .tool-pill, .soft-skill-pill, .generic-pill {
+.programming-language-pill, .framework-pill, .tool-pill, .soft-skill-pill {
     padding-inline: 1rem;
-}
-
-.generic-pill {
-    border-width: 1px;
 }
