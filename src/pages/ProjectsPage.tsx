@@ -64,7 +64,7 @@ function Projects() {
                         <div className="w-[100%]">
                             <img src={project.img} alt={project.title} className="w-[100%]"/>
                         </div>
-                        <div id="project-details" className="flex flex-col">
+                        <div id="project-details" className="flex flex-col gap-[1rem]">
                             <div id="title-and-creator" className="flex flex-col">
                                 <h2>{project.title}</h2>
                                 <p>Created by {project.creator}</p>
