@@ -36,11 +36,7 @@ body {
     gap: 0.25rem;
 }
 
-.pill-element {
-    padding-inline: 1rem;
-}
-
-.primary-button, .secondary-button, .pill-element {
+.primary-button, .secondary-button, .programming-language-pill, .framework-pill, .tool-pill, .soft-skill-pill {
     border-radius: 2rem;
 }
 
@@ -100,4 +96,7 @@ h2 {
 .soft-skill-pill {
     background-color: #fef3c7;
     color: #92400e;
+}
+.programming-language-pill, .framework-pill, .tool-pill, .soft-skill-pill {
+    padding-inline: 1rem;
 }
