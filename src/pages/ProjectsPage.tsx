@@ -9,8 +9,8 @@ function Projects() {
         img: string;
         title: string;
         creator: string;
-        descriptions: string[];
         techStack: string[];
+        descriptions: string[];
         score?: string;
         projectURL: string;
     }
@@ -21,11 +21,11 @@ function Projects() {
             img: project1, 
             title: "Nintendo Switch 2 Information Website", 
             creator: "Myself",
+            techStack: [programmingLanguages[1]],
             descriptions: [
                 "Designed and built a website containing information regarding the Nintendo Switch 2 console.",
                 "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it."
-            ], 
-            techStack: [programmingLanguages[1]], 
+            ],  
             score: "4 / 5 Stars",
             projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
         },
@@ -34,10 +34,10 @@ function Projects() {
             img: project1, 
             title: "dummy card", 
             creator: "Myself",
+            techStack: [programmingLanguages[1], frameworks[1],], 
             descriptions: [
                 "lorem ipsum",
             ], 
-            techStack: [programmingLanguages[1], frameworks[1],], 
             score: "69",
             projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
         },
