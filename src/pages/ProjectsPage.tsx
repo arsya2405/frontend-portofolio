@@ -87,8 +87,8 @@ function Projects() {
                             <div id="score" className="generic-pill bg-yellow-100 text-yellow-800">
                                 Score: <strong>{project.score}</strong>
                             </div>
-                            <div className="flex justify-center w-full">
-                                <div id="read-more-or-less" className="secondary-button w-25 flex justify-center">
+                            <div id="read-more-or-less" className="flex justify-center w-full">
+                                <div className="secondary-button w-25 flex justify-center">
                                     Read Less
                                 </div>
                             </div>
