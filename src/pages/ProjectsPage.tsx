@@ -88,7 +88,7 @@ function Projects() {
                                 Score: <strong>{project.score}</strong>
                             </div>
                             <div id="url-button" className="primary-button">
-
+                                
                             </div>
                         </div>
                     </div>
