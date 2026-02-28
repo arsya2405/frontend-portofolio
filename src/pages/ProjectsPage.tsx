@@ -34,7 +34,7 @@ function Projects() {
             img: project1, 
             title: "dummy card", 
             creator: "Myself",
-            techStack: [programmingLanguages[1], frameworks[1],], 
+            techStack: [programmingLanguages[1], frameworks[1], "waduh"], 
             descriptions: [
                 "lorem ipsum",
             ], 
@@ -74,7 +74,7 @@ function Projects() {
                                     <div className=
                                     {programmingLanguages.includes(tech) ? "programming-language-pill" : 
                                     frameworks.includes(tech) ? "framework-pill" :
-                                    tools.includes(tech) ? "tool-pill" : "generic-pill"}>
+                                    tools.includes(tech) ? "tool-pill" : "generic-pill bg-[#e0e0e0]"}>
                                         {tech}
                                     </div>
                                 ))}
@@ -84,6 +84,14 @@ function Projects() {
                                     <li>{desc}</li>
                                 ))}
                             </ul>
+                            <div id="score-and-url" className="flex flex-wrap justify-between">
+                                <div id="score">
+
+                                </div>
+                                <div id="url-button">
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 ))}
