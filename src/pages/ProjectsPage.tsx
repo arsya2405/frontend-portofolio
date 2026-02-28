@@ -64,7 +64,7 @@ function Projects() {
                         <div className="w-[100%]">
                             <img src={project.img} alt={project.title} className="w-[100%]"/>
                         </div>
-                        <div id="project-details" className="flex flex-col gap-[1rem]">
+                        <div id="project-details" className="flex flex-col gap-[1rem] items-start">
                             <div id="title-and-creator" className="flex flex-col">
                                 <h2>{project.title}</h2>
                                 <p>Created by {project.creator}</p>
@@ -84,13 +84,11 @@ function Projects() {
                                     <li>{desc}</li>
                                 ))}
                             </ul>
-                            <div id="score-and-url" className="flex flex-wrap justify-between">
-                                <div id="score">
+                            <div id="score" className="generic-pill bg-yellow-100 text-yellow-800">
+                                Score: <strong>{project.score}</strong>
+                            </div>
+                            <div id="url-button" className="primary-button">
 
-                                </div>
-                                <div id="url-button">
-                                    
-                                </div>
                             </div>
                         </div>
                     </div>
