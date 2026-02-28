@@ -16,10 +16,6 @@ body {
 .primary-button {
     background-color: #3b82f6;
     color: white;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
 }
 
 .primary-button:hover {
@@ -30,10 +26,6 @@ body {
     background-color: transparent;
     border-width: 2px;
     border-color: #3b82f6;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
 }
 
 .primary-button, .secondary-button, .programming-language-pill, .framework-pill, .tool-pill, .soft-skill-pill, .generic-pill {
@@ -52,10 +44,6 @@ body {
 
 .primary-button:active {
     background-color: #1e3a8a;
-}
-
-.button-icon {
-    height: 50%;
 }
 
 .primary-color {
