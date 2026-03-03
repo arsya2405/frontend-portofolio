@@ -88,7 +88,7 @@ function Projects() {
                                 Score: <strong>{project.score}</strong>
                             </div>
                             <div id="read-more-or-less" className="flex justify-center w-full">
-                                <div className="secondary-button w-25 flex justify-center">
+                                <div className="primary-button w-25 flex justify-center">
                                     Read Less
                                 </div>
                             </div>
