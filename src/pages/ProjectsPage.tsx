@@ -13,6 +13,7 @@ function Projects() {
         descriptions: string[];
         score?: string;
         projectURL: string;
+        urlLabel: string;
     }
 
     const projects: ProjectItem[] = [
@@ -27,7 +28,8 @@ function Projects() {
                 "Utilized HTML to define the structure of the webpage and also CSS to apply visuals and responsiveness on it."
             ],  
             score: "4 / 5 Stars",
-            projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
+            projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link",
+            urlLabel: "HTML and CSS Folder"
         },
         {
             id: "dummy",
@@ -39,7 +41,8 @@ function Projects() {
                 "lorem ipsum",
             ], 
             score: "69",
-            projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link"
+            projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link",
+            urlLabel: "label"
         },
         /*
         {
@@ -50,7 +53,8 @@ function Projects() {
             descriptions: ["",], 
             techStack: ["",], 
             score: "97/100", 
-            projectURL: ""
+            projectURL: "",
+            urlLabel: ""
         },
         */
     ]
@@ -60,14 +64,18 @@ function Projects() {
             <h1>My Projects</h1>
             <article className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                 {projects.map((project) => (
-                    <div id={project.id} className="card-element flex flex-col">
+                    <div id={project.id} className="card-element flex flex-col gap-4">
                         <div className="w-[100%]">
                             <img src={project.img} alt={project.title} className="w-[100%]"/>
                         </div>
                         <div id="project-details" className="flex flex-col gap-[1rem] items-start">
                             <div id="title-and-creator" className="flex flex-col">
                                 <h2>{project.title}</h2>
-                                <p>Created by {project.creator}</p>
+                                <div className="flex gap-2">
+                                    <p>Created by <strong>{project.creator}</strong></p>
+                                    <span>|</span>
+                                    <a href={project.projectURL} target="_blank" rel="noopener noreferrer" className="link-text">{project.urlLabel}</a>
+                                </div>
                             </div> 
                             <div id="tech-stack" className="flex flex-wrap gap-[0.5rem]">
                                 {project.techStack.map((tech) => (
