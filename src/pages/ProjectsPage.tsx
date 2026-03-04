@@ -14,6 +14,7 @@ function Projects() {
         score?: string;
         projectURL: string;
         urlLabel: string;
+        date: string;
     }
 
     const projects: ProjectItem[] = [
@@ -29,7 +30,8 @@ function Projects() {
             ],  
             score: "4 / 5 Stars",
             projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link",
-            urlLabel: "HTML and CSS Folder"
+            urlLabel: "HTML and CSS Folder",
+            date: "29 - 30 August 2025"
         },
         {
             id: "dummy",
@@ -42,7 +44,8 @@ function Projects() {
             ], 
             score: "69",
             projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link",
-            urlLabel: "label"
+            urlLabel: "label",
+            date: ""
         },
         /*
         {
@@ -54,7 +57,8 @@ function Projects() {
             techStack: ["",], 
             score: "97/100", 
             projectURL: "",
-            urlLabel: ""
+            urlLabel: "",
+            date: ""
         },
         */
     ]
@@ -73,6 +77,8 @@ function Projects() {
                                 <h2>{project.title}</h2>
                                 <div className="flex gap-2">
                                     <p>Created by <strong>{project.creator}</strong></p>
+                                    <span>|</span>
+                                    <p><strong>{project.date}</strong></p>
                                     <span>|</span>
                                     <a href={project.projectURL} target="_blank" rel="noopener noreferrer" className="link-text">{project.urlLabel}</a>
                                 </div>
