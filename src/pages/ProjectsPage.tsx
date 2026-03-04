@@ -36,7 +36,7 @@ function Projects() {
         },
         {
             id: "dummy",
-            img: project1, 
+            img: scoreIcon, 
             title: "dummy card", 
             creator: "Myself",
             techStack: [programmingLanguages[1], frameworks[1], "waduh"], 
@@ -69,9 +69,9 @@ function Projects() {
             <h1>My Projects</h1>
             <article className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                 {projects.map((project) => (
-                    <div id={project.id} className="card-element flex flex-col gap-4">
-                        <div className="w-full">
-                            <img src={project.img} alt={project.title} className="w-full rounded-4xl border"/>
+                    <div id={project.id} className="p-10 rounded-4xl border shadow-[0_5px_5px_#808080] flex flex-col gap-4">
+                        <div className="aspect-video overflow-hidden">
+                            <img src={project.img} alt={project.title} className="object-cover h-full w-full rounded-4xl border"/>
                         </div>
                         <div id="project-details" className="flex flex-col gap-4 items-start">
                             <div className="flex flex-col w-full">
