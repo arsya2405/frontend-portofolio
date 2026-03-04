@@ -18,6 +18,15 @@ body {
     color: white;
 }
 
+.link-text {
+    color: #3b82f6;
+    text-decoration: underline;
+}
+
+.link-text:active {
+    color: #1e3a8a;
+}
+
 .primary-button:hover {
     background-color: #3b82f6;
 }
