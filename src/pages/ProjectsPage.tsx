@@ -12,8 +12,8 @@ function Projects() {
         techStack: string[];
         descriptions: string[];
         score?: string;
-        projectURL: string;
-        urlLabel: string;
+        projectURL?: string;
+        urlLabel?: string;
         date: string;
     }
 
