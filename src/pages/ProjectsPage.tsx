@@ -64,18 +64,18 @@ function Projects() {
     ]
     
     return (
-        <section className="flex flex-col gap-[1rem] w-[100%]">
+        <section className="flex flex-col gap-4 w-full">
             <h1>My Projects</h1>
             <article className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                 {projects.map((project) => (
                     <div id={project.id} className="card-element flex flex-col gap-4">
-                        <div className="w-[100%]">
-                            <img src={project.img} alt={project.title} className="w-[100%]"/>
+                        <div className="w-full">
+                            <img src={project.img} alt={project.title} className="w-full rounded-4xl border"/>
                         </div>
-                        <div id="project-details" className="flex flex-col gap-[1rem] items-start">
-                            <div id="title-and-creator" className="flex flex-col">
+                        <div id="project-details" className="flex flex-col gap-4 items-start">
+                            <div className="flex flex-col">
                                 <h2>{project.title}</h2>
-                                <div className="flex gap-2">
+                                <div id="creator-date-url" className="flex gap-2">
                                     <p>Created by <strong>{project.creator}</strong></p>
                                     <span>|</span>
                                     <p><strong>{project.date}</strong></p>
@@ -83,7 +83,7 @@ function Projects() {
                                     <a href={project.projectURL} target="_blank" rel="noopener noreferrer" className="link-text">{project.urlLabel}</a>
                                 </div>
                             </div> 
-                            <div id="tech-stack" className="flex flex-wrap gap-[0.5rem]">
+                            <div id="tech-stack" className="flex flex-wrap gap-2">
                                 {project.techStack.map((tech) => (
                                     <div className=
                                     {programmingLanguages.includes(tech) ? "programming-language-pill" : 
@@ -102,8 +102,8 @@ function Projects() {
                                 Score: <strong>{project.score}</strong>
                             </div>
                             <div id="read-more-or-less" className="flex justify-center w-full">
-                                <div className="primary-button w-25 flex justify-center">
-                                    Read Less
+                                <div className="primary-button w-30 flex justify-center">
+                                    <strong>↑ Read Less</strong>
                                 </div>
                             </div>
                         </div>
