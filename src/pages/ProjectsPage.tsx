@@ -94,32 +94,32 @@ function Projects() {
                                 </div>
                             </div> 
                             {isExpanded ? 
-                            <div className="flex flex-col gap-4 items-start">
-                                <div id="creator-date-url" className="flex flex-wrap gap-2">
-                                    <p>Created by <strong>{project.creator}</strong></p>
-                                    <span>|</span>
-                                    <p><strong>{project.date}</strong></p>
-                                    <span>|</span>
-                                    <a href={project.projectURL} target="_blank" rel="noopener noreferrer" className="link-text">{project.urlLabel}</a>
+                                <div className="flex flex-col gap-4 items-start">
+                                    <div id="creator-date-url" className="flex flex-wrap gap-2">
+                                        <p>Created by <strong>{project.creator}</strong></p>
+                                        <span>|</span>
+                                        <p><strong>{project.date}</strong></p>
+                                        <span>|</span>
+                                        <a href={project.projectURL} target="_blank" rel="noopener noreferrer" className="link-text">{project.urlLabel}</a>
+                                    </div>
+                                    <div id="tech-stack" className="flex flex-wrap gap-2">
+                                        {project.techStack.map((tech) => (
+                                            <div className=
+                                            {programmingLanguages.includes(tech) ? "programming-language-pill" : 
+                                            frameworks.includes(tech) ? "framework-pill" :
+                                            tools.includes(tech) ? "tool-pill" : "generic-pill bg-[#e0e0e0]"}>
+                                                {tech}
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <ul id="description" className="list-disc list-inside">
+                                        {project.descriptions.map((desc) => (
+                                            <li>{desc}</li>
+                                        ))}
+                                    </ul>
                                 </div>
-                                <div id="tech-stack" className="flex flex-wrap gap-2">
-                                    {project.techStack.map((tech) => (
-                                        <div className=
-                                        {programmingLanguages.includes(tech) ? "programming-language-pill" : 
-                                        frameworks.includes(tech) ? "framework-pill" :
-                                        tools.includes(tech) ? "tool-pill" : "generic-pill bg-[#e0e0e0]"}>
-                                            {tech}
-                                        </div>
-                                    ))}
-                                </div>
-                                <ul id="description" className="list-disc list-inside">
-                                    {project.descriptions.map((desc) => (
-                                        <li>{desc}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                            :
-                            <div className="absolute"></div>
+                                :
+                                <div className="absolute"></div>
                             }
                             <div id="read-more-or-less" className="flex justify-center w-full">
                                 <button onClick={expandOrShorten} className="primary-button w-30 flex justify-center">
