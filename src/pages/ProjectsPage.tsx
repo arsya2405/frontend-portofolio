@@ -1,4 +1,5 @@
 import project1 from "../assets/images/switch-project.avif"
+import project2 from "../assets/images/blotting-blob-screenshot.avif"
 import { programmingLanguages } from "../App"
 import { frameworks } from "../App";
 import { tools } from "../App";
@@ -35,18 +36,19 @@ function Projects() {
             date: "29 - 30 August 2025"
         },
         {
-            id: "dummy",
-            img: scoreIcon, 
-            title: "dummy card", 
-            creator: "Myself",
-            techStack: [programmingLanguages[1], frameworks[1], "waduh"], 
+            id: "blottingblob",
+            img: project2, 
+            title: "Blotting Blob First-Person Game", 
+            creator: "a Course Project Group",
+            techStack: [tools[2], programmingLanguages[2], tools[0]],
             descriptions: [
-                "lorem ipsum",
+                "Developed a first-person game prototype using the Unity Engine and C#, starting from concept to playable product.",
+                "Utilized the Unity Editor to design the game levels, C# to write scripts, and GitHub to create a repository for team collaboration, version control, and code management.",
             ], 
-            score: "69",
-            projectURL: "https://drive.google.com/file/d/1YJwzxsHgx22FeknLcAwehWYipO89EQXw/view?usp=drive_link",
-            urlLabel: "label",
-            date: ""
+            score: "97 / 100",
+            projectURL: "https://polytato.itch.io/uas-vr001-kelompok1",
+            urlLabel: "itch.io",
+            date: "June - July 2025"
         },
         /*
         {
