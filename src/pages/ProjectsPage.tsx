@@ -1,5 +1,6 @@
 import project1 from "../assets/images/switch-project.avif"
 import project2 from "../assets/images/blotting-blob-screenshot.avif"
+import project3 from "../assets/images/portfolio-project.avif"
 import scoreIcon from "../assets/images/Plain_Yellow_Star.avif";
 import { programmingLanguages } from "../App"
 import { frameworks } from "../App";
@@ -51,20 +52,21 @@ function Projects() {
             urlLabel: "itch.io",
             date: "June - July 2025"
         },
-        /*
         {
-            id: "",    
-            img: "", 
-            title: "", 
-            creator: "", 
-            descriptions: ["",], 
-            techStack: ["",], 
-            score: "97/100", 
+            id: "portfolio",    
+            img: project3, 
+            title: "Personal Portfolio Website", 
+            creator: "Myself", 
+            descriptions: [
+                "Designed and built a website that shows my technical skills, certificates, and projects.",
+                "Utilized HTML to define the structure of the webpage, a combination of Standard CSS and Tailwind CSS to apply visuals and responsiveness on it, TypeScript and React to implement interactable features, and GitHub for version control.",
+            ], 
+            techStack: [programmingLanguages[1], programmingLanguages[0], frameworks[0], frameworks[1], tools[0]],
+            score: "- / -", 
             projectURL: "",
             urlLabel: "",
-            date: ""
+            date: "January - March 2026"
         },
-        */
     ]
     
     return (
