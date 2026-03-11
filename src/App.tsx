@@ -4,7 +4,6 @@ import { Routes, Route, Outlet } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import Home from './pages/HomePage';
 import Projects from './pages/ProjectsPage';
-import Certificates from './pages/CertificatesPage';
 import NotFound from './pages/NotFoundPage';
 
 export const programmingLanguages: string[] = [ "TypeScript", "HTML/CSS", "C#", "SQL" ];
@@ -21,7 +20,6 @@ interface NavigationItem {
 const navigationItems: NavigationItem[] = [
   { to: '/', label: 'Home' },
   { to: '/projects', label: 'Projects' },
-  { to: '/certifications', label: 'Certifications' }
 ];
 
 const HeaderComponent = () => {
@@ -69,7 +67,6 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />}/>
         <Route path="projects" element={<Projects />}/>
-        <Route path="certifications" element={<Certificates />}/>
         <Route path="*" element={<NotFound />}/>
       </Route>
     </Routes>
