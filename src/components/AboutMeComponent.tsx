@@ -5,7 +5,7 @@ import { softSkills } from "../App";
 
 function AboutMe () {
     return (
-        <article id="about-and-skills" className="flex flex-col gap-2 md:flex-row">
+        <article id="about-and-skills" className="flex flex-col gap-4 md:flex-row">
             <div id="about-me-edu-certif" className="flex-1 flex flex-col gap-4">
                 <div id="about-me" className="flex-1 flex flex-col gap-4">
                     <h1 className="underline">About Me</h1>
