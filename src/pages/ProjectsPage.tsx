@@ -63,8 +63,8 @@ function Projects() {
             ], 
             techStack: [programmingLanguages[1], programmingLanguages[0], frameworks[0], frameworks[1], tools[0]],
             score: "- / -", 
-            projectURL: "",
-            urlLabel: "",
+            projectURL: "https://github.com/arsya2405/frontend-portofolio",
+            urlLabel: "GitHub Repository",
             date: "January - March 2026"
         },
     ]
