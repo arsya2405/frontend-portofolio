@@ -10,7 +10,7 @@ function AboutMe () {
                 <div id="about-me" className="flex-1 flex flex-col gap-4">
                     <h1 className="underline">About Me</h1>
                     <ul className="list-disc list-inside">
-                        <li>Possess strong web and game development skills with fluency in English.</li>
+                        <li>Possess strong web development skills with fluency in English.</li>
                         <li>Keen to pursue a career in Information Technology (IT) with a focus on front-end web developer roles.</li>
                     </ul>
                 </div>
