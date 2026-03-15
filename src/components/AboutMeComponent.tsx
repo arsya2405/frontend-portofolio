@@ -1,7 +1,7 @@
-import { programmingLanguages } from "../App"
-import { frameworks } from "../App";
-import { tools } from "../App";
-import { softSkills } from "../App";
+import { programmingLanguages } from "../variables/skills";
+import { frameworks } from "../variables/skills";
+import { tools } from "../variables/skills";
+import { softSkills } from "../variables/skills";
 
 function AboutMe () {
     return (

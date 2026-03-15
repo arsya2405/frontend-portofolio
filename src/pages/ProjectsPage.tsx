@@ -1,9 +1,9 @@
-import project1 from "../assets/images/switch-project.avif"
-import project2 from "../assets/images/portfolio-project.avif"
+import project1 from "../assets/images/switch-project.avif";
+import project2 from "../assets/images/portfolio-project.avif";
 import scoreIcon from "../assets/images/Plain_Yellow_Star.avif";
-import { programmingLanguages } from "../App"
-import { frameworks } from "../App";
-import { tools } from "../App";
+import { programmingLanguages } from "../variables/skills";
+import { frameworks } from "../variables/skills";
+import { tools } from "../variables/skills";
 import { useState } from "react";
 
 function Projects() {
