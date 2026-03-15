@@ -1,6 +1,5 @@
 import project1 from "../assets/images/switch-project.avif"
-import project2 from "../assets/images/blotting-blob-screenshot.avif"
-import project3 from "../assets/images/portfolio-project.avif"
+import project2 from "../assets/images/portfolio-project.avif"
 import scoreIcon from "../assets/images/Plain_Yellow_Star.avif";
 import { programmingLanguages } from "../App"
 import { frameworks } from "../App";
@@ -38,23 +37,8 @@ function Projects() {
             date: "29 - 30 August 2025"
         },
         {
-            id: "blottingblob",
-            img: project2, 
-            title: "Blotting Blob First-Person Game", 
-            creator: "a Course Project Group",
-            techStack: [tools[2], programmingLanguages[2], tools[0]],
-            descriptions: [
-                "Developed a first-person game prototype using the Unity Engine and C#, starting from concept to playable product.",
-                "Utilized the Unity Editor to design the game levels, C# to write scripts, and GitHub to create a repository for team collaboration, version control, and code management.",
-            ], 
-            score: "97 / 100",
-            projectURL: "https://polytato.itch.io/uas-vr001-kelompok1",
-            urlLabel: "itch.io",
-            date: "June - July 2025"
-        },
-        {
             id: "portfolio",    
-            img: project3, 
+            img: project2, 
             title: "Personal Portfolio Website", 
             creator: "Myself", 
             descriptions: [
