@@ -5,7 +5,7 @@ import { softSkills } from "../variables/skills";
 
 function AboutMe () {
     return (
-        <article id="about-and-skills" className="flex flex-col gap-4 items-center lg:items-start md:gap-10 lg:flex-row">
+        <article id="about-and-skills" className="flex flex-col gap-5 items-center lg:items-start md:gap-10 lg:flex-row">
             <div id="about-me-edu-certif" className="flex-1 flex flex-col gap-4 card-element">
                 <div id="about-me" className="flex-1 flex flex-col gap-4">
                     <h1 className="underline">About Me</h1>
