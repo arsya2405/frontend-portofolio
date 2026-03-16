@@ -5,7 +5,7 @@ import { softSkills } from "../variables/skills";
 
 function AboutMe () {
     return (
-        <article id="about-and-skills" className="flex flex-col gap-4 items-start md:gap-10 md:flex-row">
+        <article id="about-and-skills" className="flex flex-col gap-4 items-center lg:items-start md:gap-10 lg:flex-row">
             <div id="about-me-edu-certif" className="flex-1 flex flex-col gap-4 card-element">
                 <div id="about-me" className="flex-1 flex flex-col gap-4">
                     <h1 className="underline">About Me</h1>
@@ -15,7 +15,7 @@ function AboutMe () {
                         <li>Has mastered hard skills such as HTML, CSS, TypeScript, React, Tailwind CSS, and GitHub for web development.</li>
                     </ul>
                 </div>
-                <div className="flex gap-5 justify-between">
+                <div id="edu-certif" className="flex flex-col gap-4 justify-between md:flex-row">
                     <div id="edu" className="flex flex-col gap-4">
                         <h1 className="underline">Education</h1>
                         <div className="flex flex-col">
