@@ -10,8 +10,9 @@ function AboutMe () {
                 <div id="about-me" className="flex-1 flex flex-col gap-4">
                     <h1 className="underline">About Me</h1>
                     <ul className="list-disc list-inside">
-                        <li>Possess strong web development skills with fluency in English.</li>
                         <li>Keen to pursue a career in Information Technology (IT) with a focus on front-end web developer roles.</li>
+                        <li>Has experience in developing a stylized and responsive informative website, to which an evaluator gave a positive score of 4 / 5 stars.</li>
+                        <li>Has mastered hard skills such as HTML, CSS, TypeScript, React, Tailwind CSS, and GitHub for web development.</li>
                     </ul>
                 </div>
                 <div id="edu" className="flex-1 flex flex-col gap-4">
