@@ -7,6 +7,7 @@ function AboutMe () {
     return (
         <article id="about-and-skills" className="flex flex-col gap-4 md:gap-10 md:flex-row">
             <div id="about-me-edu-certif" className="flex-1 flex flex-col gap-4">
+            <div id="about-me-edu-certif" className="flex-1 flex flex-col gap-4 card-element">
                 <div id="about-me" className="flex-1 flex flex-col gap-4">
                     <h1 className="underline">About Me</h1>
                     <ul className="list-disc list-inside">
@@ -33,6 +34,7 @@ function AboutMe () {
                 </div>
             </div>
             <div id="skills" className="flex-1 flex flex-col gap-4">
+            <div id="skills" className="flex-1 flex flex-col gap-4 card-element">
                 <div id="hard-skills" className="flex flex-col gap-4">
                     <h1 className="underline">Hard Skills</h1>
                     <div id="hard-skill-groups" className="flex flex-col gap-2">
