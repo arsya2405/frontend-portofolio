@@ -66,7 +66,7 @@ function Projects() {
                     };
 
                    return (
-                    <div id={project.id} className="p-5 rounded-4xl border shadow-[0_5px_5px_#808080] flex flex-col gap-4 relative">
+                    <div id={project.id} className="card-element flex flex-col gap-4 relative">
                         <div className="aspect-video overflow-hidden">
                             <img src={project.img} alt={project.title} className="object-cover h-full w-full rounded-4xl border"/>
                         </div>
