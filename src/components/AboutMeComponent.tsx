@@ -5,8 +5,7 @@ import { softSkills } from "../variables/skills";
 
 function AboutMe () {
     return (
-        <article id="about-and-skills" className="flex flex-col gap-4 md:gap-10 md:flex-row">
-            <div id="about-me-edu-certif" className="flex-1 flex flex-col gap-4">
+        <article id="about-and-skills" className="flex flex-col gap-4 items-start md:gap-10 md:flex-row">
             <div id="about-me-edu-certif" className="flex-1 flex flex-col gap-4 card-element">
                 <div id="about-me" className="flex-1 flex flex-col gap-4">
                     <h1 className="underline">About Me</h1>
@@ -33,7 +32,6 @@ function AboutMe () {
                     </ul>
                 </div>
             </div>
-            <div id="skills" className="flex-1 flex flex-col gap-4">
             <div id="skills" className="flex-1 flex flex-col gap-4 card-element">
                 <div id="hard-skills" className="flex flex-col gap-4">
                     <h1 className="underline">Hard Skills</h1>
@@ -74,7 +72,7 @@ function AboutMe () {
                 </div>
             </div>
         </article>
-    )
+    );
 }
 
 export default AboutMe
