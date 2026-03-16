@@ -15,21 +15,23 @@ function AboutMe () {
                         <li>Has mastered hard skills such as HTML, CSS, TypeScript, React, Tailwind CSS, and GitHub for web development.</li>
                     </ul>
                 </div>
-                <div id="edu" className="flex-1 flex flex-col gap-4">
-                    <h1 className="underline">Education</h1>
-                    <div className="flex flex-col">
-                        <p><strong>Bachelor’s Degree in Computer Science:</strong></p>
+                <div className="flex gap-5 justify-between">
+                    <div id="edu" className="flex flex-col gap-4">
+                        <h1 className="underline">Education</h1>
+                        <div className="flex flex-col">
+                            <p><strong>Bachelor’s Degree in Computer Science:</strong></p>
+                            <ul className="list-disc list-inside">
+                                <li>Cakrawala University, 2024 - Present</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="certifications" className="flex flex-col gap-4">
+                        <h1 className="underline">Certifications</h1>
                         <ul className="list-disc list-inside">
-                            <li>Cakrawala University, 2024 - Present</li>
+                            <li><a href="https://cert.efset.org/en/q2bBQB" target="_blank" rel="noopener noreferrer" className="link-text">EF SET English Certificate 60/100 (B2 Upper Intermediate)</a></li>
+                            <li><a href="https://www.dicoding.com/certificates/72ZDK98KVPYW" target="_blank" rel="noopener noreferrer" className="link-text">Belajar Dasar Pemrograman Web</a></li>
                         </ul>
                     </div>
-                </div>
-                <div id="certifications" className="flex-1 flex flex-col gap-4">
-                    <h1 className="underline">Certifications</h1>
-                    <ul className="list-disc list-inside">
-                        <li><a href="https://cert.efset.org/en/q2bBQB" target="_blank" rel="noopener noreferrer" className="link-text">EF SET English Certificate 60/100 (B2 Upper Intermediate)</a></li>
-                        <li><a href="https://www.dicoding.com/certificates/72ZDK98KVPYW" target="_blank" rel="noopener noreferrer" className="link-text">Belajar Dasar Pemrograman Web</a></li>
-                    </ul>
                 </div>
             </div>
             <div id="skills" className="flex-1 flex flex-col gap-4 card-element">
