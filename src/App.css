@@ -90,3 +90,10 @@ h2 {
 .programming-language-pill, .framework-pill, .tool-pill, .soft-skill-pill, .generic-pill {
     padding-inline: 1rem;
 }
+
+.card-element {
+    padding: 1.25rem;
+    border-radius: 2rem;
+    border-width: 1px; 
+    box-shadow: 0 5px 5px #808080;
+}
