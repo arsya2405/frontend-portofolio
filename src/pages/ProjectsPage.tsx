@@ -45,7 +45,7 @@ function Projects() {
                 "Designed and built a website that shows my technical skills, certificates, and projects.",
                 "Utilized HTML to define the structure of the webpage, a combination of Standard CSS and Tailwind CSS to apply visuals and responsiveness on it, TypeScript and React to implement interactable features, and GitHub for version control.",
             ], 
-            techStack: [programmingLanguages[1], programmingLanguages[0], frameworks[0], frameworks[1], tools[0]],
+            techStack: [programmingLanguages[1], programmingLanguages[0], frameworks[0], frameworks[1], tools[0], tools[1]],
             score: "- / -", 
             projectURL: "https://github.com/arsya2405/frontend-portofolio",
             urlLabel: "GitHub Repository",
