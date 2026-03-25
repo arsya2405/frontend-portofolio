@@ -56,7 +56,6 @@ function Projects() {
     return (
         <section className="flex flex-col gap-4 w-full">
             <h1>My Projects</h1>
-            {/*if total cards odd = last card col-span-full*/}
             <article className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                 {projects.map((project) => {
                     const [isExpanded, setIsExpanded] = useState(false);
@@ -110,7 +109,7 @@ function Projects() {
                             }
                             <div id="read-more-or-less" className="flex justify-center w-full">
                                 <button onClick={expandOrShorten} className="primary-button w-30 flex justify-center">
-                                    <strong>{isExpanded ? "↑ Read Less" : "↓ Read More"}</strong>
+                                    <strong>{isExpanded ? "Read Less ↑" : "Read More ↓"}</strong>
                                 </button>
                             </div>
                         </div>
