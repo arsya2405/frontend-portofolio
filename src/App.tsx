@@ -32,7 +32,7 @@ const HeaderComponent = () => {
 const FooterComponent = () => {
   return (
     <footer className="primary-color flex p-5 justify-center">
-      <span className="text-white">&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</span>
+      <span className="text-white text-center">&copy; 2026 Muhammad Arsya Nurafi. All rights reserved.</span>
     </footer>
   );
 }
