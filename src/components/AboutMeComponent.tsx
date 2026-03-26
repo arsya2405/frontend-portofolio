@@ -29,7 +29,7 @@ function AboutMe () {
                         <h1 className="underline">Certifications</h1>
                         <ul className="list-disc list-inside">
                             <li><a href="https://cert.efset.org/en/q2bBQB" target="_blank" rel="noopener noreferrer" className="link-text">EF SET English Certificate 60/100 (B2 Upper Intermediate)</a></li>
-                            <li><a href="https://www.dicoding.com/certificates/72ZDK98KVPYW" target="_blank" rel="noopener noreferrer" className="link-text">Belajar Dasar Pemrograman Web</a></li>
+                            <li><a href="https://www.dicoding.com/certificates/72ZDK98KVPYW" target="_blank" rel="noopener noreferrer" className="link-text">Sertifikat Kompetensi - Belajar Dasar Pemrograman Web</a></li>
                         </ul>
                     </div>
                 </div>
